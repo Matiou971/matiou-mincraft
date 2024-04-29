@@ -1,0 +1,208 @@
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+* {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+}
+
+body{
+    margin: 0 auto ;
+}
+
+header.header {
+    display: flex;
+    align-items: center;
+}
+
+section.top-page {
+    background: url('../image/fond.jpg');
+    height: 120vh;
+    background-size: cover;
+    padding: 25px;
+    height: 850px;
+}
+
+/* page de bienvenue (landing page) */
+
+.landing-page {
+    padding: 20px 50px
+
+}
+
+.big-title {
+    color: white;
+    font-size: 150px;
+    font-family: "VT323", monospace;
+    margin-left: 90px;
+    font-size: 180px; 
+}
+
+
+.scroll-down {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    position: absolute;
+    bottom: 50px
+
+}
+
+
+header.header img {
+    width: 150px;
+
+}
+/* menue de navigation */
+nav.nav {
+    display: flex;
+    list-style: none;
+    width: 250px;
+    justify-content: space-between;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+.li1:hover {
+ scale: 1.8;
+}
+
+.li2:hover {
+    scale: 1.8;
+   }
+
+.li3:hover {
+    scale: 1.8;
+   }
+
+nav.nav li {
+    color: white;
+}
+
+/* historique */
+
+.historique {
+    display: flex;
+    justify-content:space-evenly ;
+    margin: 50px;
+    
+}
+
+.historique-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.delivery-icon {
+    font-size: 50px;
+    color: rgba(2, 235, 14, 0.616);
+    transition: 1s;
+}
+
+.delivery-icon:hover {
+    scale: 1.2;
+}
+
+.historique-details {
+    font-weight: 800;
+    text-align: center;
+}
+
+/* meubles  */
+
+.section-title {
+    font-size: 50px;
+    font-family: "VT323", monospace ;
+    font-weight: 100;
+    position: relative;
+}
+
+.section-title::before {
+content: '';
+position: absolute;
+background-color: rgba(2, 235, 14, 0.616);
+width: 500px;
+height: 6px;
+bottom: 0;
+
+}
+
+.meuble-items {
+    margin: 100px;
+}
+
+.best-meuble {  
+    min-height: 500px;
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.meuble-box {
+    position: relative;
+    background-size: cover;
+    background-position: center ;
+    min-width: 350px;
+    height: 500px;
+    flex: 1;
+    
+}
+
+.meuble1 {
+    background-image: url(../image/meuble1.jpg);
+    transition: 1s;   
+}
+.meuble1:hover {
+    transform:scale(1.1) ;
+    z-index: 2;
+}
+
+.meuble2 {
+    background-image: url(../image/meuble2.jpg); 
+    transition: 1s; 
+}
+.meuble2:hover {
+    transform:scale(1.1) ;
+    z-index: 2;
+}
+
+.meuble3 {
+    background-image: url(../image/meuble3.jpg);
+    transition: 1s; 
+}
+.meuble3:hover {
+    transform:scale(1.1) ;
+    z-index: 2;
+}
+
+.meuble4 {
+    background-image: url(../image/meuble4.jpg);
+    transition: 1s;     
+}
+.meuble4:hover {
+    transform:scale(1.1) ;
+    z-index: 2;
+}
+
+.meuble-details {
+    background-color: rgb(226, 213, 213);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 1px;
+}
+
+.meuble-name {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 3px;
+}
+ 
+.meuble-prixe {
+ color: rgba(0, 189, 9, 0.616);
+font-weight: 1000;
+font-size: 14px;
+line-height: 3px;
+
+}
+
+
