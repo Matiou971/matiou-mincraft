@@ -9,6 +9,9 @@ body{
     margin: 0 auto ;
 }
 
+html {
+    scroll-behavior: smooth;
+}
 header.header {
     display: flex;
     align-items: center;
@@ -38,13 +41,23 @@ section.top-page {
 }
 
 
-.scroll-down {
-    color: white;
-    text-decoration: none;
-    font-size: 25px;
-    position: absolute;
-    bottom: 50px
+.scroll-up {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background-color: rgb(75, 69, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 5px;
+    bottom: 5px; 
+}
 
+.fa-solid fa-arrow-up {
+    width: 50px;
 }
 
 
@@ -84,7 +97,6 @@ nav.nav li {
     display: flex;
     justify-content:space-evenly ;
     margin: 50px;
-    
 }
 
 .historique-item {
@@ -118,13 +130,12 @@ nav.nav li {
 }
 
 .section-title::before {
-content: '';
-position: absolute;
-background-color: rgba(2, 235, 14, 0.616);
-width: 500px;
-height: 6px;
-bottom: 0;
-
+    content: '';
+    position: absolute;
+    background-color: rgba(2, 235, 14, 0.616);
+    width: 500px;
+    height: 6px;
+    bottom: 0;
 }
 
 .meuble-items {
@@ -144,12 +155,12 @@ bottom: 0;
     min-width: 350px;
     height: 500px;
     flex: 1;
-    
+    transition: 1s; 
 }
 
 .meuble1 {
     background-image: url(../image/meuble1.jpg);
-    transition: 1s;   
+    transition: 1s;
 }
 .meuble1:hover {
     transform:scale(1.1) ;
@@ -184,11 +195,11 @@ bottom: 0;
 }
 
 .meuble-details {
-    background-color: rgb(226, 213, 213);
+    background-color: rgb(233, 214, 214);
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 5px 1px;
+    padding: 3px 1px;
 }
 
 .meuble-name {
@@ -204,5 +215,4 @@ font-size: 14px;
 line-height: 3px;
 
 }
-
 
